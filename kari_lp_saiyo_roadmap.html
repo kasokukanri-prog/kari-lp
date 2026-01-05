@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>【仮LP】採用成功ロードマップ 実践セミナー｜採用定着支援協会</title>
+  <style>
+    :root{
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --text:#101828;
+      --muted:#475467;
+      --line:#e4e7ec;
+      --brand:#175cd3;
+      --brand2:#12b76a;
+      --warn:#f79009;
+      --shadow:0 10px 20px rgba(16,24,40,.06);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.7;
+    }
+    a{color:inherit}
+    .container{max-width:1040px;margin:0 auto;padding:24px 18px 90px}
+    .grid{display:grid;grid-template-columns:1.3fr .7fr;gap:18px;align-items:start}
+    @media (max-width: 920px){.grid{grid-template-columns:1fr}}
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .pad{padding:18px}
+    .badgeRow{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+    .badge{
+      display:inline-flex;align-items:center;gap:6px;
+      font-size:12px;font-weight:700;
+      padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;
+      color:#111;
+    }
+    .badge.brand{border-color:rgba(23,92,211,.25);background:rgba(23,92,211,.06);color:var(--brand)}
+    .badge.good{border-color:rgba(18,183,106,.25);background:rgba(18,183,106,.08);color:var(--brand2)}
+    .badge.warn{border-color:rgba(247,144,9,.30);background:rgba(247,144,9,.10);color:var(--warn)}
+    h1{font-size:28px;line-height:1.25;margin:6px 0 8px}
+    @media (max-width: 520px){h1{font-size:24px}}
+    .sub{color:var(--muted);font-size:14px;margin:0 0 12px}
+    .bullets{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+    .bullets li{display:flex;gap:10px;align-items:flex-start}
+    .dot{width:10px;height:10px;border-radius:999px;background:var(--brand);margin-top:8px;flex:none}
+    .ctaRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{
+      display:inline-flex;justify-content:center;align-items:center;gap:8px;
+      padding:12px 14px;border-radius:12px;border:1px solid transparent;
+      text-decoration:none;font-weight:800;cursor:pointer;
+      transition:.15s transform ease, .15s opacity ease;
+      font-size:14px;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn.primary{background:var(--brand);color:#fff}
+    .btn.ghost{background:#fff;border-color:var(--line);color:var(--text)}
+    .miniNote{font-size:12px;color:var(--muted);margin-top:10px}
+    .sideBox h3{margin:0 0 8px;font-size:16px}
+    .kv{
+      display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px
+    }
+    .kvi{
+      border:1px dashed var(--line);border-radius:14px;padding:12px;background:#fff
+    }
+    .kvi b{display:block;font-size:13px}
+    .kvi span{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+    .section{margin-top:14px}
+    .section h2{
+      font-size:18px;margin:0 0 10px;display:flex;align-items:center;gap:10px
+    }
+    .pill{font-size:12px;font-weight:800;color:var(--brand);background:rgba(23,92,211,.08);border:1px solid rgba(23,92,211,.18);
+      padding:4px 10px;border-radius:999px}
+    .checklist{margin:0;padding-left:18px;color:var(--text)}
+    .checklist li{margin:6px 0}
+    .cards4{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    @media (max-width: 680px){.cards4{grid-template-columns:1fr}}
+    .topic{border:1px solid var(--line);border-radius:14px;padding:14px;background:#fff}
+    .topic h3{margin:0 0 4px;font-size:15px}
+    .topic p{margin:0;color:var(--muted);font-size:13px}
+    .topic .take{margin-top:8px;font-size:13px}
+    .topic .take b{color:var(--text)}
+    .compare{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+    table{border-collapse:collapse;width:100%}
+    th,td{border-bottom:1px solid var(--line);padding:10px 12px;font-size:13px;vertical-align:top}
+    th{background:#f2f4f7;text-align:left}
+    tr:last-child td{border-bottom:none}
+    .flow{display:grid;gap:10px}
+    .step{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
+    .num{width:28px;height:28px;border-radius:999px;background:rgba(23,92,211,.10);color:var(--brand);
+      display:flex;align-items:center;justify-content:center;font-weight:900;flex:none}
+    .step b{display:block}
+    .step span{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+    details{border:1px solid var(--line);border-radius:14px;background:#fff;padding:10px 12px}
+    details + details{margin-top:10px}
+    summary{cursor:pointer;font-weight:800}
+    summary::-webkit-details-marker{display:none}
+    .foot{font-size:12px;color:var(--muted);margin-top:10px}
+    .sticky{
+      position:fixed;left:0;right:0;bottom:0;
+      background:rgba(247,248,251,.86);backdrop-filter:blur(10px);
+      border-top:1px solid var(--line);
+      padding:10px 12px;
+      z-index:10;
+    }
+    .stickyInner{max-width:1040px;margin:0 auto;display:flex;gap:10px;align-items:center;justify-content:space-between}
+    .stickyText{font-size:12px;color:var(--muted)}
+    .sticky .btn{padding:10px 12px;border-radius:12px}
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- FV -->
+    <div class="grid">
+      <div class="card pad">
+        <div class="badgeRow">
+          <span class="badge brand">紹介者限定｜無料ご招待</span>
+          <span class="badge good">Zoom 75分</span>
+          <span class="badge warn">定員15社｜満席締切（キャンセル待ち有）</span>
+          <span class="badge">対象：経営者/役員/事業責任者（採用担当同席可）</span>
+        </div>
+
+        <h1>採用がうまくいかない原因と、<br>「直す順番」が75分でわかります。</h1>
+        <p class="sub">
+          中小企業のための「採用成功ロードマップ」実践セミナーシリーズ（必要な回だけ参加OK）<br>
+          通常 5,500円（税込）→ 採用定着士からの招待に限り無料ご招待（紹介者限定枠）
+        </p>
+
+        <ul class="bullets">
+          <li><span class="dot"></span><span><b>求人票：</b>応募が来ない“直しどころ”が見える</span></li>
+          <li><span class="dot"></span><span><b>応募〜面接：</b>少ない応募でも採り切る導線が整理できる</span></li>
+          <li><span class="dot"></span><span><b>次の一手：</b>参加後アンケートで、希望者は無料個別相談（採用定着士より連絡）</span></li>
+        </ul>
+
+        <div class="ctaRow" id="apply">
+          <a class="btn primary" href="[GoogleフォームURLをここに貼る]" target="_blank" rel="noopener">参加回を選んで申し込む（無料）</a>
+          <a class="btn ghost" href="#topics">テーマを先に見る</a>
+        </div>
+        <div class="miniNote">
+          ※日程は申込フォーム内に掲載しています（LPには掲載しません）／録画・アーカイブ配信はありません
+        </div>
+      </div>
+
+      <aside class="card pad sideBox">
+        <h3>このLPの「仮」ポイント</h3>
+        <div class="kv">
+          <div class="kvi"><b>申込</b><span>Googleフォーム（参加回を選択）</span></div>
+          <div class="kvi"><b>Zoom案内</b><span>紹介者（採用定着士）が手動送付</span></div>
+          <div class="kvi"><b>資料</b><span>アンケ回答者へ翌営業日メール送付（抜粋PDF）</span></div>
+          <div class="kvi"><b>相談導線</b><span>参加後アンケートで希望受付→採用定着士より連絡</span></div>
+        </div>
+        <div class="section">
+          <h2><span class="pill">信頼材料</span>実績（表示例）</h2>
+          <ul class="checklist">
+            <li>満足度：毎回90%以上（直近6ヶ月・過去6回開催のアンケート）</li>
+            <li>2025年6月より毎月継続開催（内容を改善しながら実施）</li>
+            <li>累計支援3,000社超（採用定着士全体の採用サイト運用支援）※注記</li>
+          </ul>
+          <p class="foot">※数値の注記はページ下部にまとめています（誤認防止）</p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- 共感 -->
+    <div class="card pad section">
+      <h2>採用は、だいたいこの3つで止まります。</h2>
+      <p class="sub">
+        求人を出しても応募が来ない／応募が来ても面接に進まない／面接で決めきれない。<br>
+        本セミナーではまず「詰まり」を整理し、明日から直すポイントを明確にします。
+      </p>
+      <ul class="checklist">
+        <li>求人票の改善点が分からない</li>
+        <li>応募が来ない・来ても面接につながらない（辞退が多い）</li>
+        <li>面接の見極めや判断がブレる／ミスマッチが怖い</li>
+      </ul>
+    </div>
+
+    <!-- テーマ -->
+    <div class="card pad section" id="topics">
+      <h2>選べる4つのテーマ（必要回だけ参加OK）</h2>
+      <p class="sub">
+        日程は申込フォームに集約しています。ここではテーマと「持ち帰り」を記載します。
+      </p>
+
+      <div class="cards4">
+        <div class="topic">
+          <h3>① 中小企業のための採用力向上セミナー</h3>
+          <p>採用の設計と優先順位を整理</p>
+          <div class="take"><b>持ち帰り：</b>詰まり診断／改善の優先順位</div>
+        </div>
+        <div class="topic">
+          <h3>② 求人に「アットホームな職場」が既にNG！求人の書き方</h3>
+          <p>応募が増える“伝え方”へ整える</p>
+          <div class="take"><b>持ち帰り：</b>NG→OK言い換え／魅力言語化テンプレ</div>
+        </div>
+        <div class="topic">
+          <h3>③ 少ない応募者を採り切る勝ち組中小企業のノウハウ</h3>
+          <p>面接率・辞退を改善する導線設計</p>
+          <div class="take"><b>持ち帰り：</b>導線チェック／辞退防止の要点</div>
+        </div>
+        <div class="topic">
+          <h3>④ 採りきる技術（面接編）</h3>
+          <p>見極め軸・質問設計で判断のブレを減らす</p>
+          <div class="take"><b>持ち帰り：</b>見極め軸／質問設計の型（抜粋）</div>
+        </div>
+      </div>
+
+      <div class="ctaRow">
+        <a class="btn primary" href="[GoogleフォームURLをここに貼る]" target="_blank" rel="noopener">参加回を選んで申し込む（無料）</a>
+        <a class="btn ghost" href="#how">参加の流れを見る</a>
+      </div>
+    </div>
+
+    <!-- 差別化 -->
+    <div class="card pad section">
+      <h2>“知識を増やす”より、“採用が進む状態”を作るセミナーです</h2>
+      <p class="sub">
+        一般的なノウハウセミナーのように情報を詰め込むのではなく、求人・導線・面接の「直すポイント」を整理し、実務に落とすことに特化しています。
+      </p>
+
+      <div class="compare">
+        <table>
+          <thead>
+            <tr>
+              <th>選択肢</th>
+              <th>得られるもの</th>
+              <th>注意点</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>本セミナー</b></td>
+              <td>詰まりの特定→直す順番→明日やることが明確</td>
+              <td>実行は自社で必要（希望者は参加後アンケで相談受付）</td>
+            </tr>
+            <tr>
+              <td>一般的な採用ノウハウセミナー</td>
+              <td>知識・事例</td>
+              <td>自社への落とし込みが弱く“聞いて終わり”になりやすい</td>
+            </tr>
+            <tr>
+              <td>求人広告/人材紹介を増やす</td>
+              <td>露出・候補者機会</td>
+              <td>設計が弱いままだと費用が無駄になりやすい</td>
+            </tr>
+            <tr>
+              <td>採用コンサル/代行</td>
+              <td>実行支援</td>
+              <td>費用・範囲の確認が必要（まずは現状整理が有効）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="foot">※誇大表現を避け、「改善ポイントが明確になる」表現に寄せています。</p>
+    </div>
+
+    <!-- 講師・実績 -->
+    <div class="card pad section">
+      <h2>講師・実績</h2>
+      <p class="sub"><b>講師：</b>松下智彦 氏（採用定着支援協会・代表理事）</p>
+
+      <ul class="checklist">
+        <li><b>満足度：</b>毎回90%以上（直近6ヶ月・過去6回開催のアンケート）</li>
+        <li><b>継続開催：</b>2025年6月より毎月開催（現場ニーズで内容を改善）</li>
+        <li><b>支援実績：</b>累計支援3,000社超（採用定着士全体の採用サイト運用支援）</li>
+      </ul>
+      <p class="foot">※数値の定義は、ページ下部「注記」に記載しています。</p>
+    </div>
+
+    <!-- 特典 -->
+    <div class="card pad section">
+      <h2>アンケート回答者特典｜当日資料（抜粋）PDFを翌営業日に送付</h2>
+      <p class="sub">
+        セミナー後のアンケートにご回答いただいた方へ、当日資料（抜粋）PDFを翌営業日にメールでお送りします。社内共有や実行のたたき台にご活用ください。
+      </p>
+    </div>
+
+    <!-- 参加方法 -->
+    <div class="card pad section" id="how">
+      <h2>参加の流れ（申込〜当日〜次の一手）</h2>
+      <div class="flow">
+        <div class="step">
+          <div class="num">1</div>
+          <div><b>Googleフォームから申込</b><span>参加したい回を選択（満席時はキャンセル待ち選択可）</span></div>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <div><b>Zoom案内は紹介者（採用定着士）から手動送付</b><span>申込後に順次お送りします（テンプレを用意すると送付漏れ防止になります）</span></div>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <div><b>当日Zoom参加（75分）</b><span>録画・アーカイブ配信はありません</span></div>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <div><b>参加後アンケート</b><span>資料送付（翌営業日）＋無料個別相談の希望受付</span></div>
+        </div>
+        <div class="step">
+          <div class="num">5</div>
+          <div><b>無料個別相談（希望者のみ）</b><span>アンケートで希望を出した方へ、採用定着士よりご連絡します</span></div>
+        </div>
+      </div>
+
+      <div class="ctaRow">
+        <a class="btn primary" href="[GoogleフォームURLをここに貼る]" target="_blank" rel="noopener">参加回を選んで申し込む（無料）</a>
+        <a class="btn ghost" href="#faq">FAQを見る</a>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="card pad section" id="faq">
+      <h2>よくある質問</h2>
+
+      <details>
+        <summary>本当に無料ですか？</summary>
+        <p class="sub">はい。採用定着士からの招待（紹介者限定枠）に限り無料ご招待です（通常5,500円）。</p>
+      </details>
+
+      <details>
+        <summary>誰でも参加できますか？</summary>
+        <p class="sub">経営者/役員/事業責任者向けです（採用担当の同席は可能）。それ以外の方は、個別相談で参加可否をご案内します。</p>
+      </details>
+
+      <details>
+        <summary>日程はどこで確認できますか？</summary>
+        <p class="sub">申込フォームに集約しています。フォーム内で希望回と日程をご確認ください。</p>
+      </details>
+
+      <details>
+        <summary>定員は？満席のときはどうなりますか？</summary>
+        <p class="sub">定員は15社です。満席になり次第締切ですが、キャンセル待ちも受け付けています。</p>
+      </details>
+
+      <details>
+        <summary>録画・アーカイブはありますか？</summary>
+        <p class="sub">ありません。当日参加でのご案内となります。</p>
+      </details>
+
+      <details>
+        <summary>資料はもらえますか？</summary>
+        <p class="sub">参加後アンケートに回答いただいた方へ、当日資料（抜粋）PDFを翌営業日にメール送付します。</p>
+      </details>
+
+      <details>
+        <summary>個別相談は必須ですか？</summary>
+        <p class="sub">必須ではありません。参加後アンケートで希望者のみ受付し、採用定着士よりご連絡します。</p>
+      </details>
+
+      <details>
+        <summary>Zoom案内はいつ届きますか？</summary>
+        <p class="sub">紹介者（採用定着士）から手動でお送りします。送付がない場合は紹介者へご確認ください。</p>
+      </details>
+    </div>
+
+    <!-- クロージング -->
+    <div class="card pad section">
+      <h2>まずは、採用の“詰まり”をはっきりさせませんか</h2>
+      <p class="sub">
+        採用がうまくいかないとき、原因は必ずどこかにあります。<br>
+        本セミナーで「直す順番」と「明日やること」を整理しましょう。紹介者限定の無料招待枠・定員15社のため、満席になり次第締切（キャンセル待ちあり）です。
+      </p>
+      <div class="ctaRow">
+        <a class="btn primary" href="[GoogleフォームURLをここに貼る]" target="_blank" rel="noopener">定員15社｜参加回を選んで申し込む（無料）</a>
+      </div>
+
+      <div class="foot">
+        <b>注記（実績の定義）</b><br>
+        ・満足度「90%以上」：直近6ヶ月・過去6回開催分のアンケート結果に基づきます。<br>
+        ・累計支援「3,000社超」：採用定着士全体の累計支援社数（採用サイト運用支援）を指します。<br>
+        ・効果は個社の状況により異なります。本LPでは効果保証となる表現を避けています。
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Sticky CTA -->
+  <div class="sticky">
+    <div class="stickyInner">
+      <div>
+        <div style="font-weight:900;font-size:13px;">紹介者限定｜無料招待枠</div>
+        <div class="stickyText">Zoom75分／定員15社（満席締切・キャンセル待ち有）</div>
+      </div>
+      <a class="btn primary" href="[GoogleフォームURLをここに貼る]" target="_blank" rel="noopener">申込（無料）</a>
+    </div>
+  </div>
+</body>
+</html>
